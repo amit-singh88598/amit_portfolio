@@ -58,9 +58,19 @@
   line-height: 0px;
 }
 
+@media only screen and (max-width: 500px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
 .subtitle {
   font-size: 1rem;
   line-height: 0px;
+}
+
+.mt-p80 {
+  margin-top: 80px;
 }
 
 .mb-n5 {

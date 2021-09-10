@@ -1,18 +1,10 @@
-import {
-  Card,
-  CardMedia,
-  Divider,
-  Grid,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
+import { Card, Divider, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    // backgroundColor: "#022C43",
     paddingBottom: 40,
   },
   media: {
@@ -24,55 +16,21 @@ const useStyle = makeStyles((theme) => ({
       width: 150,
     },
   },
-  heading: {
-    fontSize: "2em",
-    color: "#fff",
-    paddingTop: 60,
-    [theme.breakpoints.down("sm")]: {
-      paddingTop: 40,
-    },
-  },
   divider: {
-    width: 300,
-    height: 2,
+    width: 450,
+    height: 1,
     backgroundColor: "#C7C7C7",
     marginBottom: 40,
+    marginTop: -10,
+    [theme.breakpoints.down("sm")]: {
+      width: 300,
+    },
   },
   flex: {
     display: "flex",
     justifyContent: "center",
   },
 }));
-
-const SkillImages = [
-  {
-    img: "/html.png",
-  },
-  {
-    img: "/css.png",
-  },
-  {
-    img: "/javascript.png",
-  },
-  {
-    img: "/react.png",
-  },
-  {
-    img: "/nextjs.png",
-  },
-  {
-    img: "/redux.png",
-  },
-  {
-    img: "/materialui.png",
-  },
-  {
-    img: "/npm1.png",
-  },
-  {
-    img: "/github.png",
-  },
-];
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -270,8 +228,10 @@ const items = [
 function Skills(props) {
   const classes = useStyle();
   return (
-    <div className={classes.root}>
-      <Typography className={classes.heading}>SPECIALIZATION</Typography>
+    <div className={classes.root} id="skills">
+      <Typography class="Roboto-Slab letter-spacing grey-text heading mt-p80">
+        SPECIALIZATION
+      </Typography>
       <Divider className={classes.divider} />
       <AliceCarousel
         mouseTracking

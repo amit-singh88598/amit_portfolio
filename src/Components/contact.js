@@ -1,23 +1,10 @@
-import {
-  Card,
-  CardMedia,
-  IconButton,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
-import {
-  Call,
-  GitHub,
-  Instagram,
-  LinkedIn,
-  Mail,
-  Twitter,
-} from "@material-ui/icons";
+import { Card, makeStyles, Typography } from "@material-ui/core";
+import { Call, GitHub, Twitter } from "@material-ui/icons";
 import React from "react";
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    paddingBlock: 30,
+    paddingBlock: 50,
   },
   cardStyle: {
     backgroundColor: "#37474F",
@@ -26,7 +13,6 @@ const useStyle = makeStyles((theme) => ({
     boxShadow: "2px 3px 20px rgba(0,0,0,0.16), 2px 3px 20px rgba(0,0,0,0.16)",
   },
   socialCard: {
-    // backgroundColor: "#37474F",
     paddingTop: 30,
     height: 70,
   },
@@ -35,18 +21,12 @@ const useStyle = makeStyles((theme) => ({
     width: 30,
     color: "#18F1F1",
     marginBottom: -5,
-    // "&:hover": {
-    //   opacity: "0.5",
-    // },
   },
 
   github: {
     height: 40,
     width: 40,
     color: "#18F1F1",
-    // "&:hover": {
-    //   opacity: "0.5",
-    // },
     marginLeft: 20,
   },
 
@@ -55,26 +35,17 @@ const useStyle = makeStyles((theme) => ({
     width: 80,
     color: "#18F1F1",
     marginInline: 20,
-    // "&:hover": {
-    //   opacity: "0.5",
-    // },
   },
   mail: {
     height: 32,
     width: 40,
     color: "#18F1F1",
     marginRight: 20,
-    // "&:hover": {
-    //   opacity: "0.5",
-    // },
   },
   call: {
     height: 25,
     width: 25,
     color: "#18F1F1",
-    // "&:hover": {
-    //   opacity: "0.5",
-    // },
   },
   text: {
     textAlign: "center",
@@ -93,44 +64,46 @@ const useStyle = makeStyles((theme) => ({
 function Contact(props) {
   const classes = useStyle();
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="contact">
       <Card className={classes.cardStyle} elevation={0}>
-        {/* <Card className={classes.socialCard} elevation={0}> */}
         <div className={classes.justifyCenter}>
-          <a href="https://github.com/amit-singh88598">
-            {/* <IconButton className={classes.btn}> */}
-            {/* </IconButton> */}
+          <a
+            href="https://twitter.com/amitsin64341700"
+            rel="noreferrer"
+            target="_blank"
+          >
             <Twitter className={classes.twitter} />
           </a>
-          <a href="https://www.instagram.com/nomad_amitsingh/">
-            {/* <IconButton className={classes.btn}> */}
+          <a
+            href="https://github.com/amit-singh88598"
+            rel="noreferrer"
+            target="_blank"
+          >
             <GitHub className={classes.github} />
-            {/* </IconButton> */}
           </a>
-          <a href="https://www.linkedin.com/in/amit-singh-71755b159/">
-            {/* <IconButton className={classes.btn}> */}
-            {/* <LinkedIn className={classes.linkedIn} /> */}
+          <a
+            href="https://www.linkedin.com/in/amit-singh-71755b159/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img
               src="./linkedin.svg"
               alt="linkedin"
               className={classes.linkedIn}
             />
-            {/* </IconButton> */}
           </a>
-          <a href="mailto:amitsingh992728@gmail.com">
-            {/* <IconButton className={classes.btn}> */}
-            {/* <Mail className={classes.mail} /> */}
-            {/* </IconButton> */}
+          <a
+            href="mailto:amitsingh992728@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img src="./mail.svg" alt="mail" className={classes.mail} />
           </a>
           <a href="tel:7300689054">
-            {/* <IconButton className={classes.btn}> */}
             <Call className={classes.call} />
-            {/* </IconButton> */}
           </a>
         </div>
-        {/* </Card> */}
-        <Typography justify="center" className={classes.text}>
+        <Typography className={classes.text}>
           © 2021. All Rights Reserved.
         </Typography>
       </Card>

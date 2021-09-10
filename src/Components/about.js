@@ -1,6 +1,15 @@
-import { Card, IconButton, makeStyles, Typography } from "@material-ui/core";
+import {
+  Card,
+  Grid,
+  IconButton,
+  makeStyles,
+  Typography,
+} from "@material-ui/core";
 import { Call, GitHub, LinkedIn, Mail } from "@material-ui/icons";
+import "../index.css";
 import React from "react";
+import Education from "./education";
+import Experience from "./experience";
 
 const useStyle = makeStyles((theme) => ({
   cardStyle: {
@@ -46,26 +55,45 @@ function About(props) {
     <div id="about">
       <Card className={classes.cardStyle} elevation={0}>
         <Typography className={classes.heading}>
-          I am a professional web designer from San Francisco.
+          I am a professional web Designer & Developer.
         </Typography>
         <Typography className={classes.subHeading}>
-          Consectetur adipisicing elit olore iusto cupiditate possimus amet
-          aliquam qui voluptatem. Animi perferendis Minima nemo blanditiis rem
-          odio provident delectus ab magni omnis optio. Architecto debitis
-          mollitia itaque eius accusamu.
+          I am an experienced frontend developer interested in building usable,
+          useful, well-constructed website and applications. Interested in
+          continuation of learning and corporation with excellent people.
         </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <Experience />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Education />
+          </Grid>
+        </Grid>
         <div className={classes.justifyCenter}>
-          <a href="https://github.com/amit-singh88598">
+          <a
+            href="https://github.com/amit-singh88598"
+            rel="noreferrer"
+            target="_blank"
+          >
             <IconButton className={classes.btn}>
               <GitHub />
             </IconButton>
           </a>
-          <a href="https://www.linkedin.com/in/amit-singh-71755b159/">
+          <a
+            href="https://www.linkedin.com/in/amit-singh-71755b159/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <IconButton className={classes.btn}>
               <LinkedIn />
             </IconButton>
           </a>
-          <a href="mailto:amitsingh992728@gmail.com">
+          <a
+            href="mailto:amitsingh992728@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+          >
             <IconButton className={classes.btn}>
               <Mail />
             </IconButton>

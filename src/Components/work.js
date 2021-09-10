@@ -1,28 +1,17 @@
-import {
-  Button,
-  Card,
-  Divider,
-  Grid,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
+import { Card, Divider, Grid, makeStyles, Typography } from "@material-ui/core";
 import { ArrowForward } from "@material-ui/icons";
 import React from "react";
 
 const useStyle = makeStyles((theme) => ({
-  heading: {
-    fontSize: "2em",
-    color: "#fff",
-    paddingTop: 60,
-    [theme.breakpoints.down("sm")]: {
-      paddingTop: 40,
-    },
-  },
   divider: {
     width: 200,
-    height: 2,
+    height: 1,
     backgroundColor: "#C7C7C7",
     marginBottom: 40,
+    marginTop: -10,
+    [theme.breakpoints.down("sm")]: {
+      width: 150,
+    },
   },
   underline: {
     width: 150,
@@ -83,7 +72,9 @@ function Work(props) {
   const classes = useStyle();
   return (
     <div id="myWork">
-      <Typography className={classes.heading}>WORKS</Typography>
+      <Typography class="Roboto-Slab letter-spacing grey-text heading mt-p80">
+        WORKS
+      </Typography>
       <Divider className={classes.divider} />
       <Grid container spacing={3}>
         {MyWork.map((item, index) => (

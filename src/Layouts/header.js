@@ -1,13 +1,11 @@
 import React from "react";
-import { alpha, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import MoreIcon from "@material-ui/icons/MoreVert";
-// import { Link, Redirect } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
@@ -23,12 +21,16 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
     },
   },
+  logo: {
+    height: 50,
+    width: 50,
+  },
   navText: {
     color: "#707070",
     textDecoration: "none",
     fontSize: "1em",
     fontWeight: "bold",
-
+    cursor: "pointer",
     marginLeft: 15,
     marginRight: 15,
     "&:hover": {
@@ -135,9 +137,7 @@ export default function Header() {
         elevation={0}
       >
         <Toolbar>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Amit Singh
-          </Typography>
+          <img src="/ASC.svg" alt="logo" className={classes.logo} />
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <Link
@@ -158,32 +158,32 @@ export default function Header() {
             >
               About
             </Link>
-            <Link
-              to="education"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              className={classes.navText}
-            >
-              Education
-            </Link>
-            <Link
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              className={classes.navText}
-            >
-              Experience
-            </Link>
+
             <Link
               to="myWork"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-120}
               className={classes.navText}
             >
               My Work
+            </Link>
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              className={classes.navText}
+            >
+              Specialization
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              className={classes.navText}
+            >
+              Contact
             </Link>
           </div>
           <div className={classes.sectionMobile}>
