@@ -7,7 +7,8 @@ import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import MoreIcon from "@material-ui/icons/MoreVert";
-import { Link } from "react-router-dom";
+// import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -139,19 +140,49 @@ export default function Header() {
           </Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <Link to="/home" className={classes.navText}>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              className={classes.navText}
+            >
               Home
             </Link>
-            <Link to="/about" className={classes.navText}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              className={classes.navText}
+            >
               About
             </Link>
-            <Link to="/education" className={classes.navText}>
+            <Link
+              to="education"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              className={classes.navText}
+            >
               Education
             </Link>
-            <Link to="/experience" className={classes.navText}>
+            <Link
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              className={classes.navText}
+            >
               Experience
             </Link>
-            <Link to="/myWork" className={classes.navText}>
+            <Link
+              to="myWork"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              className={classes.navText}
+            >
               My Work
             </Link>
           </div>

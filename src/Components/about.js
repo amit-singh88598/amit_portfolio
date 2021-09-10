@@ -5,31 +5,34 @@ import React from "react";
 const useStyle = makeStyles((theme) => ({
   cardStyle: {
     backgroundColor: "#37474F",
+    borderRadius: 0,
+    boxShadow: "2px 3px 20px rgba(0,0,0,0.16), 2px 3px 20px rgba(0,0,0,0.16)",
     paddingInline: 200,
     paddingBlock: 20,
+    position: "relative",
+    zIndex: 1,
     [theme.breakpoints.down("sm")]: {
       paddingInline: 20,
       paddingBlock: 10,
     },
   },
   heading: {
-    fontSize: "1.2em",
-    color: "#fff",
-    opacity: "0.7",
+    fontSize: "1.4em",
+    color: "#c7c7c7",
     fontWeight: "bold",
     textAlign: "center",
   },
   subHeading: {
-    fontSize: "0.9em",
-    color: "#fff",
-    opacity: "0.7",
+    fontSize: "1em",
+    letterSpacing: "0.9px",
+    color: "#b5b5b5",
     textAlign: "center",
     marginTop: 20,
   },
   btn: {
     color: "#18F1F1",
     marginTop: 30,
-    marginInline: 15,
+    marginInline: 10,
   },
   justifyCenter: {
     display: "flex",
@@ -40,8 +43,8 @@ const useStyle = makeStyles((theme) => ({
 function About(props) {
   const classes = useStyle();
   return (
-    <div>
-      <Card className={classes.cardStyle}>
+    <div id="about">
+      <Card className={classes.cardStyle} elevation={0}>
         <Typography className={classes.heading}>
           I am a professional web designer from San Francisco.
         </Typography>
