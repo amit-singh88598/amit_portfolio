@@ -16,9 +16,15 @@ const useStyle = makeStyles((theme) => ({
     },
   },
   img: {
-    paddingTop: 100,
-    [theme.breakpoints.up("lg")]: {
-      paddingTop: 120,
+    paddingTop: 50,
+    [theme.breakpoints.down("md")]: {
+      paddingTop: 75,
+    },
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: 50,
+    },
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: 0,
     },
   },
   image: {

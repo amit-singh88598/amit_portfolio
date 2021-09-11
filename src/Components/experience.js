@@ -8,6 +8,9 @@ const useStyle = makeStyles((theme) => ({
     padding: 15,
     marginTop: 40,
     height: 100,
+    [theme.breakpoints.down("sm")]: {
+      height: 120,
+    },
   },
   heading: {
     fontSize: "1em",

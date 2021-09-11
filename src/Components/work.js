@@ -11,6 +11,10 @@ const useStyle = makeStyles((theme) => ({
     marginTop: -20,
     opacity: "0.3",
     [theme.breakpoints.down("sm")]: {
+      width: 175,
+      marginTop: -10,
+    },
+    [theme.breakpoints.down("xs")]: {
       width: 150,
       marginTop: -10,
     },
