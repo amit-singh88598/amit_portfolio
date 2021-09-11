@@ -58,7 +58,7 @@ function Heros(props) {
             <img
               class="ml-n50 mb-n5 "
               className={classes.image}
-              src="/avatar.svg"
+              src="/amit-s.png"
               alt="avatar"
             />
           </div>
