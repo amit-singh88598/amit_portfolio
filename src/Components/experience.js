@@ -5,7 +5,7 @@ const useStyle = makeStyles((theme) => ({
   experienceCard: {
     borderRadius: 10,
     backgroundColor: "#394B53",
-    padding: 10,
+    padding: 15,
     marginTop: 40,
     height: 100,
   },

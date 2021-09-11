@@ -36,7 +36,6 @@ const useStyle = makeStyles((theme) => ({
   },
   viewBtn: {
     marginLeft: "auto",
-    // marginRight: 10,
     color: "#949494",
     cursor: "pointer",
   },
@@ -92,7 +91,7 @@ function Work(props) {
                   </Typography>
                   <ArrowForward className={classes.viewBtn} />
                 </div>
-                <img alt="images" src={item.img} className={classes.media} />
+                <img alt="projects" src={item.img} className={classes.media} />
               </Card>
             </a>
           </Grid>
