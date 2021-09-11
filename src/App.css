@@ -54,19 +54,38 @@
 }
 
 .heading {
+  font-size: 4.5rem;
+}
+
+.main-heading {
   font-size: 3rem;
+}
+
+.lh {
   line-height: 0px;
+}
+
+.mt-60 {
+  margin-top: 60;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  line-height: 0px;
+  margin-top: -8px;
 }
 
 @media only screen and (max-width: 500px) {
   .heading {
+    font-size: 2.5rem;
+  }
+  .main-heading {
     font-size: 2rem;
   }
-}
-
-.subtitle {
-  font-size: 1rem;
-  line-height: 0px;
+  .subtitle {
+    font-size: 1.2em;
+    line-height: 40px;
+  }
 }
 
 .mt-p80 {

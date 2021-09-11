@@ -9,6 +9,7 @@ const useStyle = makeStyles((theme) => ({
   text1: {
     color: "#18FFFF",
     fontSize: "1em",
+    lineHeight: 0,
     fontWeight: "bold",
     [theme.breakpoints.down("sm")]: {
       paddingTop: 100,
@@ -45,7 +46,7 @@ function Heros(props) {
       >
         <Grid item xs={12} sm={6}>
           <Typography className={classes.text1}>Hi There, I'm</Typography>
-          <Typography class="Roboto-Slab letter-spacing grey-text heading">
+          <Typography class="Roboto-Slab letter-spacing grey-text heading lh mt-60">
             Amit Singh
           </Typography>
           <Typography class="Azeret-Mono grey-text subtitle">

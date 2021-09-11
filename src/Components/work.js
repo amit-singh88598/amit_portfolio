@@ -8,16 +8,12 @@ const useStyle = makeStyles((theme) => ({
     height: 1,
     backgroundColor: "#C7C7C7",
     marginBottom: 40,
-    marginTop: -10,
+    marginTop: -20,
+    opacity: "0.3",
     [theme.breakpoints.down("sm")]: {
       width: 150,
+      marginTop: -10,
     },
-  },
-  underline: {
-    width: 150,
-    height: 2,
-    backgroundColor: "#fff",
-    marginBottom: 60,
   },
   media: {
     height: 200,
@@ -52,17 +48,17 @@ const useStyle = makeStyles((theme) => ({
 const MyWork = [
   {
     title: "Doorest",
-    img: "/doorest.png",
+    img: "/doorest.PNG",
     link: "https://doorest.in/",
   },
   {
     title: "Login Academy",
-    img: "/login-academy.png",
+    img: "/login-academy.PNG",
     link: "https://login-academic.herokuapp.com/",
   },
   {
     title: "Sell My Car",
-    img: "/sell-my-car.png",
+    img: "/sell-my-car.PNG",
     link: "https://sell-my-car.vercel.app/",
   },
 ];
@@ -71,7 +67,7 @@ function Work(props) {
   const classes = useStyle();
   return (
     <div id="myWork">
-      <Typography class="Roboto-Slab letter-spacing grey-text heading mt-p80">
+      <Typography class="Roboto-Slab letter-spacing grey-text main-heading mt-p80 lh">
         WORKS
       </Typography>
       <Divider className={classes.divider} />
