@@ -11,8 +11,14 @@ const useStyle = makeStyles((theme) => ({
     fontSize: "1em",
     lineHeight: 0,
     fontWeight: "bold",
+    [theme.breakpoints.down("md")]: {
+      paddingTop: 100,
+      marginLeft: 15,
+      fontSize: "1.2em",
+    },
     [theme.breakpoints.down("sm")]: {
       paddingTop: 100,
+      marginLeft: 5,
     },
   },
   img: {
