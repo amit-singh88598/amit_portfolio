@@ -4,7 +4,7 @@ import { Typography, Grid, makeStyles } from "@material-ui/core";
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    minHeight: "100vh",
+    // minHeight: "100vh",
   },
   text1: {
     color: "#18FFFF",
@@ -16,12 +16,16 @@ const useStyle = makeStyles((theme) => ({
   },
   img: {
     paddingTop: 100,
-    [theme.breakpoints.down("sm")]: {
-      paddingTop: 50,
+    [theme.breakpoints.up("lg")]: {
+      paddingTop: 120,
     },
   },
   image: {
     [theme.breakpoints.down("sm")]: {
+      height: "100%",
+      width: "100%",
+    },
+    [theme.breakpoints.up("md")]: {
       height: "100%",
       width: "100%",
     },

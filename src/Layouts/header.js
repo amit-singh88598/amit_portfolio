@@ -102,28 +102,57 @@ export default function Header() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <Link to="/home" className={classes.mobNavigation}>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          className={classes.mobNavigation}
+        >
           home
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/about" className={classes.mobNavigation}>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          className={classes.mobNavigation}
+        >
           About
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/education" className={classes.mobNavigation}>
-          Education
-        </Link>
-      </MenuItem>
-      <MenuItem>
-        <Link to="/experience" className={classes.mobNavigation}>
-          Experience
-        </Link>
-      </MenuItem>
-      <MenuItem>
-        <Link to="/myWork" className={classes.mobNavigation}>
+        <Link
+          to="myWork"
+          spy={true}
+          smooth={true}
+          offset={-120}
+          className={classes.mobNavigation}
+        >
           My Work
+        </Link>
+      </MenuItem>
+      <MenuItem>
+        <Link
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-120}
+          className={classes.mobNavigation}
+        >
+          Specialization
+        </Link>
+      </MenuItem>
+      <MenuItem>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          className={classes.mobNavigation}
+        >
+          Contact
         </Link>
       </MenuItem>
     </Menu>
