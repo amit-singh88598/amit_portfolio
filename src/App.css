@@ -196,3 +196,9 @@
     transform: rotate(360deg);
   }
 }
+
+.animate {
+  animation-name: backInUp, moveLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}

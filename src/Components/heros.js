@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import { Typography, Grid, makeStyles } from "@material-ui/core";
+import "animate.css";
 
 const useStyle = makeStyles((theme) => ({
   root: {
@@ -58,7 +59,7 @@ function Heros(props) {
       >
         <Grid item xs={12} sm={6}>
           <Typography className={classes.text1}>Hi There, I'm</Typography>
-          <Typography class="Roboto-Slab letter-spacing grey-text heading lh mt-60">
+          <Typography class="Roboto-Slab letter-spacing grey-text heading lh mt-60 animate">
             Amit Singh
           </Typography>
           <Typography class="Azeret-Mono grey-text subtitle">
