@@ -42,6 +42,10 @@ const useStyle = makeStyles((theme) => ({
     color: "#18F1F1",
     marginTop: 30,
     marginInline: 10,
+    "&:hover": {
+      transform: "scale(1.125)",
+      transition: "all .3s",
+    },
   },
   justifyCenter: {
     display: "flex",
