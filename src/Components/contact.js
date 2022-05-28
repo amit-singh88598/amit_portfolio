@@ -21,6 +21,10 @@ const useStyle = makeStyles((theme) => ({
     width: 30,
     color: "#18F1F1",
     marginBottom: -5,
+    "&:hover": {
+      transform: "scale(1.125)",
+      transition: "all .4s",
+    },
   },
 
   github: {
@@ -28,6 +32,10 @@ const useStyle = makeStyles((theme) => ({
     width: 40,
     color: "#18F1F1",
     marginLeft: 20,
+    "&:hover": {
+      transform: "scale(1.125)",
+      transition: "all .3s",
+    },
   },
 
   linkedIn: {
@@ -35,17 +43,29 @@ const useStyle = makeStyles((theme) => ({
     width: 80,
     color: "#18F1F1",
     marginInline: 20,
+    "&:hover": {
+      transform: "scale(1.125)",
+      transition: "all .3s",
+    },
   },
   mail: {
     height: 32,
     width: 40,
     color: "#18F1F1",
     marginRight: 20,
+    "&:hover": {
+      transform: "scale(1.125)",
+      transition: "all .3s",
+    },
   },
   call: {
     height: 25,
     width: 25,
     color: "#18F1F1",
+    "&:hover": {
+      transform: "scale(1.125)",
+      transition: "all .3s",
+    },
   },
   text: {
     textAlign: "center",

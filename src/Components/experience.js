@@ -31,7 +31,7 @@ function Experience(props) {
       <Card elevation={0} className={classes.experienceCard}>
         <Typography className={classes.heading}>Experience</Typography>
         <Typography className={classes.body}>
-          Working with Digaut Software as a React Developer. Having 1+ Year of
+          Working with Rubico IT as a Frontend Developer. Having 1.5+ Year of
           experience in Web Development.
         </Typography>
       </Card>

@@ -28,11 +28,16 @@ const useStyle = makeStyles((theme) => ({
     padding: 10,
     backgroundColor: "#37474F",
     borderRadius: 0,
+    "&:hover": {
+      transform: "scale(1.05)",
+      transition: "all 1s",
+    },
   },
   title: {
     fontSize: "1em",
     color: "#18FFFF",
     letterSpacing: 1,
+    fontFamily: "Azeret Mono",
   },
   viewBtn: {
     marginLeft: "auto",

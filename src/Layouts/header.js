@@ -22,25 +22,29 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   logo: {
-    height: 50,
-    width: 50,
+    height: 60,
+    width: 120,
   },
   navText: {
     color: "#707070",
+    fontFamily: "Azeret Mono",
     textDecoration: "none",
-    fontSize: "1em",
+    fontSize: "1.125em",
     fontWeight: "bold",
     cursor: "pointer",
     marginLeft: 15,
     marginRight: 15,
     "&:hover": {
       color: "#18FFFF",
+      transition: "all .6s",
+      textShadow: "0px 4px 3px rgba(0,0,0,0.4)",
     },
   },
   mobNavigation: {
     color: "#000",
     textDecoration: "none",
     display: "flex",
+    fontFamily: "Azeret Mono",
   },
   sectionDesktop: {
     display: "none",
@@ -109,7 +113,7 @@ export default function Header() {
           offset={-80}
           className={classes.mobNavigation}
         >
-          home
+          Home
         </Link>
       </MenuItem>
       <MenuItem>
@@ -166,7 +170,7 @@ export default function Header() {
         elevation={0}
       >
         <Toolbar>
-          <img src="/ASC.svg" alt="logo" className={classes.logo} />
+          <img src="/asc-logo.svg" alt="logo" className={classes.logo} />
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <Link
