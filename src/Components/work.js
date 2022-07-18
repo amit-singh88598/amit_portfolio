@@ -58,7 +58,7 @@ const MyWork = [
   {
     title: "Doorest",
     img: "/doorest.PNG",
-    link: "https://doorest.in/",
+    link: "https://dorest.digaut.com/",
   },
   {
     title: "Login Academy",
